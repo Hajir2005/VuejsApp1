@@ -1,14 +1,15 @@
 <template>
-    <div class="home" style="margin:20px 30px">
+    <div >
         <h1>Channel Capacity Calculator</h1>
         <p>S = Blog<sub>2</sub>(1 + SNR)</p>
         <p>SNR<sub>dB</sub>=10log<sub>10</sub>SNR</p>
-        <p>SNR<sub>dB</sub> = <input type='text' v-model="SNR" /></p>
+
+        <p class='form-inline'>SNR<sub>dB</sub> = <input class='form-control form-control-sm' type='text' v-model="SNR" /></p>
         <p>10log<sub>10</sub>SNR = {{SNR}}</p>
         <p>log<sub>10</sub>SNR = {{SNR}} / 10</p>
         <p> = {{Math.round((SNR / 10) * 100) / 100}}</p>
         <p><u>SNR = {{SNRRes}}</u></p><br/>
-        <p>B = <input type='text' v-model="B" /></p>
+        <p class='form-inline'>B = <input class='form-control form-control-sm' type='text' v-model="B" /></p>
         <p>C = B log<sub>2</sub> (1 + SNR)</p>
         <p> = {{B}} x 10<sup>6</sup>log<sub>2</sub> (1 + {{SNRRes}})</p>
         <p>log<sub>2</sub>({{SNRandOne}}) = log({{SNRandOne}})/ log<sub>2</sub> = {{this.round(Math.log10(SNRandOne) ,2)}}/{{this.round(Math.log10(2) ,4)}} = {{SecondRes}}</p>
@@ -17,7 +18,7 @@
 
         <p>M = ?</p>
         <p>C = 2Blog<sub>2</sub>M</p>
-        <p>C = <input v-model='C'/></p>
+        <p class='form-inline'>C = <input class='form-control form-control-sm' v-model='C'/></p>
         <p>{{C}} x 10<sup>6</sup> = {{B}} * 2 * 10<sup>6</sup>log<sub>2</sub>M</p>
         <p>log<sub>2</sub>M = {{C}} x 10<sup>6</sup> / {{B * 2}} x 10<sup>6</sup> = {{round(log2M,2)}} </p>
         <p>logM = {{log2M}} x log2 = {{logM}}</p>
@@ -31,7 +32,7 @@
 
 <script>
     export default {
-        name: 'Home',
+        name: 'CCC',
        
         data() {
             return {

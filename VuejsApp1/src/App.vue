@@ -1,16 +1,26 @@
 <template>
     <div id="app">
-        <Home  />
+        <div style="display:flex; margin:20px">
+            <div style="margin-right:60px">
+            <CCC  />
+            </div>
+            <div>
+                <FSLC />
+            </div>
+
+
+        </div>
+        
     </div>
 </template>
 
 <script>
-    import Home from './components/Home.vue';
-
+    import CCC from './components/CCC.vue';
+    import FSLC from './components/FSLC.vue'
     export default {
         name: 'app',
         components: {
-            Home
+            CCC, FSLC
         }
     };
 </script>
