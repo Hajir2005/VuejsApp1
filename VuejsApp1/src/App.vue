@@ -40,7 +40,7 @@
                     <FSLC />
                </div>
                <div>
-                    <SineWave />
+                   <h1><a href="http://www.ecircuitcenter.com/Calc/draw_sine1/draw_sine_canvas_topic1.html" target="_blank">Draw SineWave</a></h1>
                </div>
           </div>
      </div>
