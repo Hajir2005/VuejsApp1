@@ -37,8 +37,8 @@
         data() {
             return {
                 SNR: 35,
-                B:0,
-                C:0
+                B:2,
+                C:10
             }
         },
         computed: {
